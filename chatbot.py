@@ -157,4 +157,6 @@ class ChatBot:
     def chatbot_response(self, msg):
         ints = self.predict_class(msg, self.model)
         res = self.getResponse(ints, self.intents)
-        return res, ints
+        return res
+
+    
