@@ -1,1 +1,30 @@
-
+{"intents":[
+    { "tag": "saudacao",
+      "patterns":["Ola","Opa","Oi", "tudo bem"],
+      "responses": ["Oi","Olá"]
+    },
+    { "tag": "despedida",
+      "patterns":["valeu","tchau","Obrigado","tks"],
+      "responses": ["Até breve","Falou"]
+    },
+    { "tag": "data_prova",
+      "patterns":["Quando sera a prova?","A prova será em que dia?"],
+      "responses": ["no dia 26"]
+    },
+    {
+        "tag": "submeter pipe",
+        "patterns":["Submeter PIPE", "Projeto PIPE", "Quero submeter um projeto PIPE"],
+        "responses": ["Você pode submeter o seu projeto PIPE em: https://fapesp.br/pipe/"]
+    },
+    {
+        "tag": "git",
+        "patterns": ["Encontrar github", "GitHub", "Git"],
+        "responses": ["Você pode encontrar o respositório do seguinte link do GitHub: https://github.com/guilhermevieirasilvagoncalves/chatbot-pipe"]
+    },
+    {
+        "tag": "pipe pergunta",
+        "patterns": ["Me diga mais sobre PIPE", "O que você sabe sobre PIPE?", "O que é um PIPE?"],
+        "responses": ["Não sei, não me programaram sobre isso"]
+    }
+  ]
+  }
