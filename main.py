@@ -4,10 +4,9 @@ import tkinter
 from tkinter import *
 
 myChatBot = ChatBot()
-#apenas carregar um modelo pronto
-myChatBot.loadModel()
 
-#criar o modelo
-#myChatBot.createModel()
+#myChatBot.loadModel()
+
+myChatBot.createModel()
 
 View(myChatBot)

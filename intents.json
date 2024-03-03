@@ -1,30 +1,89 @@
-{"intents":[
-    { "tag": "saudacao",
-      "patterns":["Ola","Opa","Oi", "tudo bem"],
-      "responses": ["Oi","Olá"]
+{
+  "intents":[
+    { 
+      "tag": "saudacao",
+      "patterns":["Ola","Olá","Opa","Oi", "tudo bem?"],
+      "responses": ["Oi, no que posso te ajudar?","Olá, no que posso te ajudar?"]
     },
-    { "tag": "despedida",
-      "patterns":["valeu","tchau","Obrigado","tks"],
+    {
+      "tag": "despedida",
+      "patterns":["valeu","tchau","Obrigado","tks", "Agradeço pela ajuda"],
       "responses": ["Até breve","Falou"]
     },
-    { "tag": "data_prova",
-      "patterns":["Quando sera a prova?","A prova será em que dia?"],
-      "responses": ["no dia 26"]
+    {
+      "tag": "submeter_pipe",
+      "patterns":["Submeter PIPE", "Preciso subir um projeto PIPE", "Quero submeter um projeto PIPE", "Desejo submeter um projeto PIPE"],
+      "responses": ["Você pode submeter o seu projeto PIPE em: https://fapesp.br/pipe/"]
     },
     {
-        "tag": "submeter pipe",
-        "patterns":["Submeter PIPE", "Projeto PIPE", "Quero submeter um projeto PIPE"],
-        "responses": ["Você pode submeter o seu projeto PIPE em: https://fapesp.br/pipe/"]
+      "tag": "sobre_pipe",
+      "patterns": ["O que é o PIPE FAPESP?", "Explica o programa PIPE FAPESP", "Gostaria de saber mais sobre o PIPE FAPESP"],
+      "responses": ["O PIPE (Programa de Apoio à Pesquisa em Pequenas Empresas) da FAPESP (Fundação de Amparo à Pesquisa do Estado de São Paulo) é um programa de financiamento que tem como objetivo apoiar projetos de pesquisa e desenvolvimento tecnológico em empresas de pequeno porte no estado de São Paulo, Brasil."]
     },
     {
-        "tag": "git",
-        "patterns": ["Encontrar github", "GitHub", "Git"],
-        "responses": ["Você pode encontrar o respositório do seguinte link do GitHub: https://github.com/guilhermevieirasilvagoncalves/chatbot-pipe"]
+      "tag": "objetivo_pipe",
+      "patterns": ["Qual o objetivo do PIPE FAPESP?" , "Pra que serve o PIPE FAPESP?"],
+      "responses": ["São objetivos do PIPE são:\n 1. Apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica, promover o desenvolvimento empresarial e aumentar a competitividade das pequenas empresas. \n2. Incrementar a contribuição da pesquisa para o desenvolvimento econômico e social. \n3. Induzir o aumento do investimento privado em pesquisa tecnológica. \n4. Possibilitar que as empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica.\n5. Contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas empresas e para o emprego de pesquisadores no mercado."]
     },
     {
-        "tag": "pipe pergunta",
-        "patterns": ["Me diga mais sobre PIPE", "O que você sabe sobre PIPE?", "O que é um PIPE?"],
-        "responses": ["Não sei, não me programaram sobre isso"]
+      "tag": "git",
+      "patterns": ["Encontrar github", "GitHub", "Git"],
+      "responses": ["Você pode encontrar o respositório do seguinte link do GitHub: https://github.com/guilhermevieirasilvagoncalves/chatbot-pipe"]
+    },
+    {
+      "tag": "documentos_pipe",
+      "patterns": ["Quais os documentos necessários para submeter um projeto pipe?", "O que é necessário para submeter um projeto pipe?", "Documentos pipe"],
+      "responses": ["Os documentos necessários para submeter um projeto ao PIPE FAPESP incluem a documentação do investidor privado detalhando o investimento e sua motivação e o contrato de investimento, caso disponível. Esse contato será solicitado para a contratação."]
+    },
+    {
+      "tag": "elegibilidade_pipe",
+      "patterns": ["Quem pode participar do PIPE FAPESP?", "Quais são os critérios de elegibilidade para o PIPE FAPESP?"],
+      "responses": ["Podem participar do PIPE FAPESP empresas de pequeno porte que possuam até 250 funcionários e faturamento anual de até R$ 90 milhões."]
+    },
+    {
+      "tag": "fases_pipe",
+      "patterns": ["Quais são as fases do PIPE?", "Quantas fases o pipe possui?"],
+      "responses": ["O PIPE possui 3 fases. A primeira fase  destina-se à realização de pesquisas sobre a viabilidade técnico-científica da pesquisa para inovação proposta. Possui duração de 9 meses. A segunda fase destina-se ao desenvolvimento da proposta de pesquisa para inovação propriamente dita, podendo incluir atividades preliminares para a inserção dos resultados da pesquisa no mercado. Possui duração de 24 meses. Na fase 3 espera-se que a pequena empresa realize internamente o desenvolvimento comercial e industrial dos produtos, processos, sistemas e/ou serviços inovadores obtidos a partir de pesquisas anteriores realizadas pela empresa sem o apoio da FAPESP ou a partir de pesquisa apoiada no âmbito do PIPE."]
+    },
+    {
+      "tag": "dedicacao_pipe",
+      "patterns": ["Precisa ter dedicação exclusiva ao projeto?", "É necessário dedicação exclusiva para receber a bolsa da FAPESP?"],
+      "responses": ["Caso o pesquisador principal seja pago pela empresa e não receba bolsa da FAPESP, é exigida a dedicação mínima de 24 horas semanais ao projeto na empresa. Em casos excepcionais, em que a empresa demonstra não poder arcar com o salário do Pesquisador Responsável, a FAPESP pode analisar solicitação de Bolsa de Pesquisa em Pequena Empresa (Bolsa PE FAPESP). Se o pesquisador principal solicitar Bolsa PE, é necessária a dedicação mínima de 40 horas semanais ao projeto."]
+    },
+    {
+      "tag": "investimento_pipe",
+      "patterns": ["Quanto de investimento o PIPE FAPESP oferece para as empresas?", "Qual é o financiamento concedido pela FAPESP através do PIPE?", "Quanto investimento eu consigo obter pelo PIPE FAPESP?"],
+      "responses": ["Na primeira fase o investimento é previsto de R$300.000,00 para cada projeto, considerando todos os itens concedidos pela FAPESP, incluindo as Bolsas de Treinamento Técnico e Bolsas de Pesquisa em Pequena Empresa, exceto Benefícios Complementares e Parcela para Custos de Infraestrutura Direta do Projeto. Na segunda fase o valor máximo de financiamento previsto é de até R$ 1.500.000,00 para cada projeto, considerando todos os itens concedidos pela FAPESP, incluindo as Bolsas de Treinamento Técnico e Bolsas de Pesquisa em Pequenas Empresas, exceto Benefícios Complementares e Parcela para Custos de Infraestrutura Direta do Projeto."]
+    },
+    {
+      "tag": "pesquisadores_onde",
+      "patterns": ["Apenas empresas de São Paulo podem submeter projetos?", "O pesquisador precisa ser de São Paulo para submeter um PIPE?", "Pesquisadores/ ou empresas fora do Estado de São Paulo podem apresentar projetos?"],
+      "responses": ["O Pesquisador Responsável deverá residir no estado de São Paulo para ser elegível ao PIPE. Caso a empresa já esteja constituída fora do estado de São Paulo, o pesquisador deverá submeter o projeto, obrigatoriamente, em nome dessa empresa. Ter unidade de pesquisa constituída no estado de São Paulo é condição para a concessão do processo. Adicionalmente, pesquisadores de outros estados que venham a instalar novas empresas em São Paulo e se tornem residentes no estado, também são elegíveis."]
+    },
+    {
+      "tag": "areas_pesquisa_pipe",
+      "patterns": ["Em quais áreas de pesquisa o PIPE FAPESP financia projetos?", "Quais são os tipos de projetos financiados pelo PIPE FAPESP?"],
+      "responses": ["O PIPE FAPESP financia projetos em diversas áreas de pesquisa, incluindo ciências exatas, ciências da vida, engenharias e ciências sociais aplicadas."]
+    },
+    {
+      "tag": "resultado_selecao_pipe",
+      "patterns": ["Como posso verificar os resultados da seleção do PIPE FAPESP?", "Quando serão divulgados os resultados da seleção do PIPE FAPESP?"],
+      "responses": ["Os resultados da seleção do PIPE FAPESP geralmente são divulgados no site da FAPESP e também são enviados aos participantes por e-mail."]
+    },
+    {
+      "tag": "duvida_pipe",
+      "patterns": ["Continuo com duvida","preciso de mais informações"],
+      "responses": ["O site fapesp.br/pipe apresenta em detalhes o programa, incluindo o texto completo das normas e as chamadas vigentes. Adicionalmente, de forma periódica, acontece o evento “Diálogo sobre Apoio à Pesquisa para Inovação na Pequena Empresa” no qual o programa PIPE é apresentado e os membros da coordenação tiram dúvidas dos participantes (veja as próximas datas no site do PIPE)."]
+    },
+    {
+      "tag": "limite_data",
+      "patterns": ["Qual é a data limite para submeter um projeto ao PIPE FAPESP?","Quando posso submeter uma proposta ao PIPE FAPESP?"],
+      "responses": ["As propostas para o PIPE Fase 1, Fase 2 e PIPE Invest são recebidas em fluxo contínuo durante todo o ano."]
+    },
+    {
+      "tag": "PIPEbot_explicacao",
+      "patterns": ["Quem é você?", "O que é você?"],
+      "responses": ["Olá, eu me chamo PIPEbot. Sou um robô treinado para te ajudar com as suas dúvidas relacionadas aos projetos PIPE da FAPESP. O que deseja me perguntar?"]
     }
   ]
-  }
+}
