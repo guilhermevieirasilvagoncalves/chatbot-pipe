@@ -4,6 +4,11 @@ Um chatbot que ajuda uma empresa e/ou um pesquisador a submeter um projeto PIPE 
 ### Vídeo demonstração 🎥
 Acesse o vídeo demonstrando o PIPEBot [Aqui](https://youtu.be/lapztiOGlOI)
 
+### Exemplos de uso 🔎
+
+<img width="720" alt="Captura de Tela 2024-03-05 às 20 59 43" src="https://github.com/guilhermevieirasilvagoncalves/chatbot-pipe/assets/88863957/2a3ade08-9e1c-466c-b793-3a8006103b41">
+
+
 
 ### Integrantes do grupo 🧑🏻‍💻
 
